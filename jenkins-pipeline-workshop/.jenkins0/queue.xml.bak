@@ -1,0 +1,29 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<hudson.model.Queue_-State>
+  <counter>8</counter>
+  <items>
+    <hudson.model.Queue_-BuildableItem>
+      <actions>
+        <hudson.model.CauseAction>
+          <causeBag class="linked-hash-map">
+            <entry>
+              <hudson.model.Cause_-UserIdCause/>
+              <int>1</int>
+            </entry>
+          </causeBag>
+        </hudson.model.CauseAction>
+        <io.jenkins.blueocean.service.embedded.BlueOceanUrlAction>
+          <blueOceanUrlObject class="io.jenkins.blueocean.service.embedded.BlueOceanUrlObjectImpl">
+            <mappedUrl>blue/organizations/jenkins/pipelines/</mappedUrl>
+          </blueOceanUrlObject>
+        </io.jenkins.blueocean.service.embedded.BlueOceanUrlAction>
+        <io.jenkins.blueocean.service.embedded.BlueOceanUrlAction reference="../io.jenkins.blueocean.service.embedded.BlueOceanUrlAction"/>
+      </actions>
+      <id>8</id>
+      <task class="hudson.model.FreeStyleProject">test</task>
+      <inQueueSince>1553519620419</inQueueSince>
+      <buildableStartMilliseconds>1553519620422</buildableStartMilliseconds>
+      <isPending>false</isPending>
+    </hudson.model.Queue_-BuildableItem>
+  </items>
+</hudson.model.Queue_-State>

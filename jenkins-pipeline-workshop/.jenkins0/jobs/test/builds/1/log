@@ -1,0 +1,9 @@
+Started by user [8mha:////4Kcqq1X9AUwBNxiW4MMpZ42pTQFvQJP0oJUt/okNfiMJAAAAlh+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzOEgYu/dLi1CL9vNKcHACFIKlWvwAAAA==[0manonymous
+Building remotely on [8mha:////4ESd+cBLz5xcC84NjLTfww3LHJpI3/H/jTm3z8vdIeONAAAAqh+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAyREgY5/eT83ILSktQi/ZT85OzUIgPdFEPz5BRTM/NEC2MjACBvdcbTAAAA[0mdocker0-d17cd567a832 (docker) in workspace /home/jenkins/workspace/test
+[YAD-PLUGIN] Injecting DOCKER_CONTAINER_ID variable.
+[YAD-PLUGIN] Injecting JENKINS_CLOUD_ID variable.
+[YAD-PLUGIN] DOCKER_HOST variable.
+[test] $ /bin/sh -xe /tmp/jenkins6214778313864856559.sh
++ echo hello
+hello
+Finished: SUCCESS

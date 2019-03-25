@@ -1,0 +1,102 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<com.github.kostyasha.yad.DockerSlave plugin="yet-another-docker-plugin@0.1.0-rc37">
+  <name>docker0-1f535298ca8a</name>
+  <description>Docker Node [jenkins/ssh-slave on docker0]</description>
+  <remoteFS>/home/jenkins</remoteFS>
+  <numExecutors>1</numExecutors>
+  <mode>EXCLUSIVE</mode>
+  <retentionStrategy class="hudson.slaves.RetentionStrategy$Always"/>
+  <launcher class="com.github.kostyasha.yad.launcher.DockerComputerJNLPLauncher">
+    <launchTimeout>120</launchTimeout>
+    <user>jenkins</user>
+    <jvmOpts></jvmOpts>
+    <slaveOpts></slaveOpts>
+    <jenkinsUrl></jenkinsUrl>
+    <noCertificateCheck>true</noCertificateCheck>
+  </launcher>
+  <label>docker</label>
+  <nodeProperties/>
+  <userId>anonymous</userId>
+  <dockerSlaveTemplate>
+    <id>740a5c51-b81f-472a-9e3f-e9ce8a14a42c</id>
+    <labelString>docker</labelString>
+    <launcher class="com.github.kostyasha.yad.launcher.DockerComputerJNLPLauncher">
+      <launchTimeout>120</launchTimeout>
+      <user>jenkins</user>
+      <jvmOpts></jvmOpts>
+      <slaveOpts></slaveOpts>
+      <jenkinsUrl></jenkinsUrl>
+      <noCertificateCheck>true</noCertificateCheck>
+    </launcher>
+    <remoteFs>/home/jenkins</remoteFs>
+    <mode>EXCLUSIVE</mode>
+    <retentionStrategy class="hudson.slaves.RetentionStrategy$Always" reference="../../retentionStrategy"/>
+    <numExecutors>1</numExecutors>
+    <dockerContainerLifecycle>
+      <image>jenkins/ssh-slave</image>
+      <pullImage>
+        <pullStrategy>PULL_LATEST</pullStrategy>
+        <credentialsId></credentialsId>
+      </pullImage>
+      <createContainer>
+        <command></command>
+        <hostname></hostname>
+        <dnsHosts class="java.util.Collections$UnmodifiableRandomAccessList" resolves-to="java.util.Collections$UnmodifiableList">
+          <c class="list"/>
+          <list reference="../c"/>
+        </dnsHosts>
+        <volumes class="java.util.Collections$UnmodifiableRandomAccessList" resolves-to="java.util.Collections$UnmodifiableList">
+          <c class="list"/>
+          <list reference="../c"/>
+        </volumes>
+        <volumesFrom class="java.util.Collections$UnmodifiableRandomAccessList" resolves-to="java.util.Collections$UnmodifiableList">
+          <c class="list">
+            <string>jenkinspipelineworkshop_jenkins0_1</string>
+          </c>
+          <list reference="../c"/>
+        </volumesFrom>
+        <environment class="java.util.Collections$UnmodifiableRandomAccessList" resolves-to="java.util.Collections$UnmodifiableList">
+          <c class="list"/>
+          <list reference="../c"/>
+        </environment>
+        <bindPorts></bindPorts>
+        <bindAllPorts>false</bindAllPorts>
+        <memoryLimit>0</memoryLimit>
+        <privileged>true</privileged>
+        <tty>false</tty>
+        <extraHosts class="java.util.Collections$UnmodifiableRandomAccessList" resolves-to="java.util.Collections$UnmodifiableList">
+          <c class="list"/>
+          <list reference="../c"/>
+        </extraHosts>
+        <networkMode>container:jenkinspipelineworkshop_jenkins0_1</networkMode>
+        <devices class="java.util.Collections$UnmodifiableRandomAccessList" resolves-to="java.util.Collections$UnmodifiableList">
+          <c class="list"/>
+          <list reference="../c"/>
+        </devices>
+        <cpusetCpus></cpusetCpus>
+        <cpusetMems></cpusetMems>
+        <links class="java.util.Collections$UnmodifiableRandomAccessList" resolves-to="java.util.Collections$UnmodifiableList">
+          <c class="list"/>
+          <list reference="../c"/>
+        </links>
+      </createContainer>
+      <stopContainer>
+        <timeout>10</timeout>
+      </stopContainer>
+      <removeContainer>
+        <removeVolumes>false</removeVolumes>
+        <force>false</force>
+      </removeContainer>
+    </dockerContainerLifecycle>
+    <nodeProperties/>
+    <maxCapacity>10</maxCapacity>
+  </dockerSlaveTemplate>
+  <containerId>1f535298ca8a8ce4e457d224cb8a3c7a9c9c942a6d9d0c4cfd569061b537c6a9</containerId>
+  <cloudId>docker0</cloudId>
+  <displayName>docker0-1f535298ca8a</displayName>
+  <provisioningId plugin="cloud-stats@0.13">
+    <cloudName>docker0</cloudName>
+    <templateName>jenkins/ssh-slave</templateName>
+    <fingerprint>-411415310</fingerprint>
+  </provisioningId>
+</com.github.kostyasha.yad.DockerSlave>
